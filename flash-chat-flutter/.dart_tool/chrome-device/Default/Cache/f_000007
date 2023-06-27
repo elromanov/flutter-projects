@@ -1,0 +1,502 @@
+define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/flutter/src/animation/animation_controller.dart', 'packages/flutter/src/animation/listener_helpers.dart', 'packages/flutter/src/material/colors.dart', 'packages/flutter/src/material/icon_button.dart', 'packages/flutter/src/painting/edge_insets.dart', 'packages/flutter/src/rendering/flex.dart', 'packages/animated_text_kit/src/typewriter.dart', 'packages/flutter/src/painting/strut_style.dart', 'packages/flash_chat/Components/rounded_button.dart'], (function load__packages__flash_chat__screens__welcome_screen_dart(dart_sdk, packages__flutter__src__widgets__widget_span$46dart, packages__flutter__src__animation__animation_controller$46dart, packages__flutter__src__animation__listener_helpers$46dart, packages__flutter__src__material__colors$46dart, packages__flutter__src__material__icon_button$46dart, packages__flutter__src__painting__edge_insets$46dart, packages__flutter__src__rendering__flex$46dart, packages__animated_text_kit__src__typewriter$46dart, packages__flutter__src__painting__strut_style$46dart, packages__flash_chat__Components__rounded_button$46dart) {
+  'use strict';
+  const core = dart_sdk.core;
+  const ui = dart_sdk.ui;
+  const _interceptors = dart_sdk._interceptors;
+  const dart = dart_sdk.dart;
+  const dartx = dart_sdk.dartx;
+  const framework = packages__flutter__src__widgets__widget_span$46dart.src__widgets__framework;
+  const basic = packages__flutter__src__widgets__widget_span$46dart.src__widgets__basic;
+  const heroes = packages__flutter__src__widgets__widget_span$46dart.src__widgets__heroes;
+  const container = packages__flutter__src__widgets__widget_span$46dart.src__widgets__container;
+  const image = packages__flutter__src__widgets__widget_span$46dart.src__widgets__image;
+  const widget_inspector = packages__flutter__src__widgets__widget_span$46dart.src__widgets__widget_inspector;
+  const navigator = packages__flutter__src__widgets__widget_span$46dart.src__widgets__navigator;
+  const ticker_provider = packages__flutter__src__widgets__widget_span$46dart.src__widgets__ticker_provider;
+  const animation_controller = packages__flutter__src__animation__animation_controller$46dart.src__animation__animation_controller;
+  const tween = packages__flutter__src__animation__listener_helpers$46dart.src__animation__tween;
+  const animation = packages__flutter__src__animation__listener_helpers$46dart.src__animation__animation;
+  const colors = packages__flutter__src__material__colors$46dart.src__material__colors;
+  const scaffold = packages__flutter__src__material__icon_button$46dart.src__material__scaffold;
+  const edge_insets = packages__flutter__src__painting__edge_insets$46dart.src__painting__edge_insets;
+  const flex = packages__flutter__src__rendering__flex$46dart.src__rendering__flex;
+  const typewriter = packages__animated_text_kit__src__typewriter$46dart.src__typewriter;
+  const text_style = packages__flutter__src__painting__strut_style$46dart.src__painting__text_style;
+  const rounded_button = packages__flash_chat__Components__rounded_button$46dart.Components__rounded_button;
+  var welcome_screen = Object.create(dart.library);
+  dart._checkModuleNullSafetyMode(false);
+  var T = {
+    VoidToNull: () => (T.VoidToNull = dart.constFn(dart.fnType(core.Null, [])))(),
+    ColorN: () => (T.ColorN = dart.constFn(dart.nullable(ui.Color)))(),
+    _LocationL: () => (T._LocationL = dart.constFn(dart.legacy(widget_inspector._Location)))(),
+    StringL: () => (T.StringL = dart.constFn(dart.legacy(core.String)))(),
+    JSArrayOfStringL: () => (T.JSArrayOfStringL = dart.constFn(_interceptors.JSArray$(T.StringL())))(),
+    WidgetL: () => (T.WidgetL = dart.constFn(dart.legacy(framework.Widget)))(),
+    JSArrayOfWidgetL: () => (T.JSArrayOfWidgetL = dart.constFn(_interceptors.JSArray$(T.WidgetL())))(),
+    ObjectL: () => (T.ObjectL = dart.constFn(dart.legacy(core.Object)))()
+  };
+  const CT = Object.create({
+    _: () => (C, CT)
+  });
+  dart.defineLazy(CT, {
+    get C2() {
+      return C[2] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "name",
+        [_Location_column]: 40,
+        [_Location_line]: 60,
+        [_Location_file]: null
+      });
+    },
+    get C1() {
+      return C[1] = dart.constList([C[2] || CT.C2], T._LocationL());
+    },
+    get C0() {
+      return C[0] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[1] || CT.C1,
+        [_Location_name]: null,
+        [_Location_column]: 34,
+        [_Location_line]: 60,
+        [_Location_file]: "file:///C:/Users/chardor/Desktop/flutter/flash-chat-flutter/lib/screens/welcome_screen.dart"
+      });
+    },
+    get C5() {
+      return C[5] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 21,
+        [_Location_line]: 60,
+        [_Location_file]: null
+      });
+    },
+    get C6() {
+      return C[6] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "height",
+        [_Location_column]: 21,
+        [_Location_line]: 61,
+        [_Location_file]: null
+      });
+    },
+    get C4() {
+      return C[4] = dart.constList([C[5] || CT.C5, C[6] || CT.C6], T._LocationL());
+    },
+    get C3() {
+      return C[3] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[4] || CT.C4,
+        [_Location_name]: null,
+        [_Location_column]: 26,
+        [_Location_line]: 59,
+        [_Location_file]: "file:///C:/Users/chardor/Desktop/flutter/flash-chat-flutter/lib/screens/welcome_screen.dart"
+      });
+    },
+    get C9() {
+      return C[9] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "tag",
+        [_Location_column]: 19,
+        [_Location_line]: 58,
+        [_Location_file]: null
+      });
+    },
+    get C10() {
+      return C[10] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 19,
+        [_Location_line]: 59,
+        [_Location_file]: null
+      });
+    },
+    get C8() {
+      return C[8] = dart.constList([C[9] || CT.C9, C[10] || CT.C10], T._LocationL());
+    },
+    get C7() {
+      return C[7] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[8] || CT.C8,
+        [_Location_name]: null,
+        [_Location_column]: 17,
+        [_Location_line]: 57,
+        [_Location_file]: "file:///C:/Users/chardor/Desktop/flutter/flash-chat-flutter/lib/screens/welcome_screen.dart"
+      });
+    },
+    get C13() {
+      return C[13] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "text",
+        [_Location_column]: 19,
+        [_Location_line]: 65,
+        [_Location_file]: null
+      });
+    },
+    get C14() {
+      return C[14] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "speed",
+        [_Location_column]: 19,
+        [_Location_line]: 66,
+        [_Location_file]: null
+      });
+    },
+    get C15() {
+      return C[15] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "textStyle",
+        [_Location_column]: 19,
+        [_Location_line]: 67,
+        [_Location_file]: null
+      });
+    },
+    get C12() {
+      return C[12] = dart.constList([C[13] || CT.C13, C[14] || CT.C14, C[15] || CT.C15], T._LocationL());
+    },
+    get C11() {
+      return C[11] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[12] || CT.C12,
+        [_Location_name]: null,
+        [_Location_column]: 17,
+        [_Location_line]: 64,
+        [_Location_file]: "file:///C:/Users/chardor/Desktop/flutter/flash-chat-flutter/lib/screens/welcome_screen.dart"
+      });
+    },
+    get C18() {
+      return C[18] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 15,
+        [_Location_line]: 56,
+        [_Location_file]: null
+      });
+    },
+    get C17() {
+      return C[17] = dart.constList([C[18] || CT.C18], T._LocationL());
+    },
+    get C16() {
+      return C[16] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[17] || CT.C17,
+        [_Location_name]: null,
+        [_Location_column]: 13,
+        [_Location_line]: 55,
+        [_Location_file]: "file:///C:/Users/chardor/Desktop/flutter/flash-chat-flutter/lib/screens/welcome_screen.dart"
+      });
+    },
+    get C21() {
+      return C[21] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "height",
+        [_Location_column]: 15,
+        [_Location_line]: 75,
+        [_Location_file]: null
+      });
+    },
+    get C20() {
+      return C[20] = dart.constList([C[21] || CT.C21], T._LocationL());
+    },
+    get C19() {
+      return C[19] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[20] || CT.C20,
+        [_Location_name]: null,
+        [_Location_column]: 13,
+        [_Location_line]: 74,
+        [_Location_file]: "file:///C:/Users/chardor/Desktop/flutter/flash-chat-flutter/lib/screens/welcome_screen.dart"
+      });
+    },
+    get C24() {
+      return C[24] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "colour",
+        [_Location_column]: 15,
+        [_Location_line]: 78,
+        [_Location_file]: null
+      });
+    },
+    get C25() {
+      return C[25] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "buttonTitle",
+        [_Location_column]: 15,
+        [_Location_line]: 79,
+        [_Location_file]: null
+      });
+    },
+    get C26() {
+      return C[26] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "onPressed",
+        [_Location_column]: 15,
+        [_Location_line]: 80,
+        [_Location_file]: null
+      });
+    },
+    get C23() {
+      return C[23] = dart.constList([C[24] || CT.C24, C[25] || CT.C25, C[26] || CT.C26], T._LocationL());
+    },
+    get C22() {
+      return C[22] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[23] || CT.C23,
+        [_Location_name]: null,
+        [_Location_column]: 13,
+        [_Location_line]: 77,
+        [_Location_file]: "file:///C:/Users/chardor/Desktop/flutter/flash-chat-flutter/lib/screens/welcome_screen.dart"
+      });
+    },
+    get C29() {
+      return C[29] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "colour",
+        [_Location_column]: 17,
+        [_Location_line]: 85,
+        [_Location_file]: null
+      });
+    },
+    get C30() {
+      return C[30] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "buttonTitle",
+        [_Location_column]: 17,
+        [_Location_line]: 86,
+        [_Location_file]: null
+      });
+    },
+    get C31() {
+      return C[31] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "onPressed",
+        [_Location_column]: 17,
+        [_Location_line]: 87,
+        [_Location_file]: null
+      });
+    },
+    get C28() {
+      return C[28] = dart.constList([C[29] || CT.C29, C[30] || CT.C30, C[31] || CT.C31], T._LocationL());
+    },
+    get C27() {
+      return C[27] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[28] || CT.C28,
+        [_Location_name]: null,
+        [_Location_column]: 13,
+        [_Location_line]: 84,
+        [_Location_file]: "file:///C:/Users/chardor/Desktop/flutter/flash-chat-flutter/lib/screens/welcome_screen.dart"
+      });
+    },
+    get C34() {
+      return C[34] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "mainAxisAlignment",
+        [_Location_column]: 11,
+        [_Location_line]: 52,
+        [_Location_file]: null
+      });
+    },
+    get C35() {
+      return C[35] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "crossAxisAlignment",
+        [_Location_column]: 11,
+        [_Location_line]: 53,
+        [_Location_file]: null
+      });
+    },
+    get C36() {
+      return C[36] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 11,
+        [_Location_line]: 54,
+        [_Location_file]: null
+      });
+    },
+    get C33() {
+      return C[33] = dart.constList([C[34] || CT.C34, C[35] || CT.C35, C[36] || CT.C36], T._LocationL());
+    },
+    get C32() {
+      return C[32] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[33] || CT.C33,
+        [_Location_name]: null,
+        [_Location_column]: 16,
+        [_Location_line]: 51,
+        [_Location_file]: "file:///C:/Users/chardor/Desktop/flutter/flash-chat-flutter/lib/screens/welcome_screen.dart"
+      });
+    },
+    get C39() {
+      return C[39] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "padding",
+        [_Location_column]: 9,
+        [_Location_line]: 50,
+        [_Location_file]: null
+      });
+    },
+    get C40() {
+      return C[40] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 9,
+        [_Location_line]: 51,
+        [_Location_file]: null
+      });
+    },
+    get C38() {
+      return C[38] = dart.constList([C[39] || CT.C39, C[40] || CT.C40], T._LocationL());
+    },
+    get C37() {
+      return C[37] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[38] || CT.C38,
+        [_Location_name]: null,
+        [_Location_column]: 13,
+        [_Location_line]: 49,
+        [_Location_file]: "file:///C:/Users/chardor/Desktop/flutter/flash-chat-flutter/lib/screens/welcome_screen.dart"
+      });
+    },
+    get C43() {
+      return C[43] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "backgroundColor",
+        [_Location_column]: 7,
+        [_Location_line]: 48,
+        [_Location_file]: null
+      });
+    },
+    get C44() {
+      return C[44] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "body",
+        [_Location_column]: 7,
+        [_Location_line]: 49,
+        [_Location_file]: null
+      });
+    },
+    get C42() {
+      return C[42] = dart.constList([C[43] || CT.C43, C[44] || CT.C44], T._LocationL());
+    },
+    get C41() {
+      return C[41] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[42] || CT.C42,
+        [_Location_name]: null,
+        [_Location_column]: 12,
+        [_Location_line]: 47,
+        [_Location_file]: "file:///C:/Users/chardor/Desktop/flutter/flash-chat-flutter/lib/screens/welcome_screen.dart"
+      });
+    }
+  }, false);
+  var C = Array(45).fill(void 0);
+  var I = ["package:flash_chat/screens/welcome_screen.dart"];
+  welcome_screen.WelcomeScreen = class WelcomeScreen extends framework.StatefulWidget {
+    createState() {
+      return new welcome_screen._WelcomeScreenState.new();
+    }
+  };
+  (welcome_screen.WelcomeScreen.new = function(opts) {
+    let $36creationLocationd_0dea112b090073317d4 = opts && '$creationLocationd_0dea112b090073317d4' in opts ? opts.$creationLocationd_0dea112b090073317d4 : null;
+    welcome_screen.WelcomeScreen.__proto__.new.call(this, {$creationLocationd_0dea112b090073317d4: $36creationLocationd_0dea112b090073317d4});
+    ;
+  }).prototype = welcome_screen.WelcomeScreen.prototype;
+  dart.addTypeTests(welcome_screen.WelcomeScreen);
+  dart.addTypeCaches(welcome_screen.WelcomeScreen);
+  dart.setMethodSignature(welcome_screen.WelcomeScreen, () => ({
+    __proto__: dart.getMethods(welcome_screen.WelcomeScreen.__proto__),
+    createState: dart.fnType(dart.legacy(welcome_screen._WelcomeScreenState), [])
+  }));
+  dart.setLibraryUri(welcome_screen.WelcomeScreen, I[0]);
+  dart.defineLazy(welcome_screen.WelcomeScreen, {
+    /*welcome_screen.WelcomeScreen.id*/get id() {
+      return "welcome_screen";
+    }
+  }, true);
+  var _Location_parameterLocations = dart.privateName(widget_inspector, "_Location.parameterLocations");
+  var _Location_name = dart.privateName(widget_inspector, "_Location.name");
+  var _Location_column = dart.privateName(widget_inspector, "_Location.column");
+  var _Location_line = dart.privateName(widget_inspector, "_Location.line");
+  var _Location_file = dart.privateName(widget_inspector, "_Location.file");
+  const State_SingleTickerProviderStateMixin$36 = class State_SingleTickerProviderStateMixin extends framework.State$(dart.legacy(welcome_screen.WelcomeScreen)) {};
+  (State_SingleTickerProviderStateMixin$36.new = function() {
+    ticker_provider.SingleTickerProviderStateMixin$(dart.legacy(welcome_screen.WelcomeScreen))[dart.mixinNew].call(this);
+    State_SingleTickerProviderStateMixin$36.__proto__.new.call(this);
+  }).prototype = State_SingleTickerProviderStateMixin$36.prototype;
+  dart.applyMixin(State_SingleTickerProviderStateMixin$36, ticker_provider.SingleTickerProviderStateMixin$(dart.legacy(welcome_screen.WelcomeScreen)));
+  welcome_screen._WelcomeScreenState = class _WelcomeScreenState extends State_SingleTickerProviderStateMixin$36 {
+    initState() {
+      super.initState();
+      this.animationController = new animation_controller.AnimationController.new({duration: new core.Duration.new({seconds: 1}), vsync: this});
+      this.animation = new tween.ColorTween.new({begin: colors.Colors.blueGrey, end: colors.Colors.white}).animate(this.animationController);
+      this.animationController.forward();
+      this.animationController.addListener(dart.fn(() => {
+        this.setState(dart.fn(() => {
+        }, T.VoidToNull()));
+      }, T.VoidToNull()));
+    }
+    dispose() {
+      super.dispose();
+      this.animationController.dispose();
+    }
+    build(context) {
+      return new scaffold.Scaffold.new({backgroundColor: T.ColorN().as(this.animation.value), body: new basic.Padding.new({padding: new edge_insets.EdgeInsets.symmetric({horizontal: 24.0}), child: new basic.Column.new({mainAxisAlignment: flex.MainAxisAlignment.center, crossAxisAlignment: flex.CrossAxisAlignment.stretch, children: T.JSArrayOfWidgetL().of([new basic.Row.new({children: T.JSArrayOfWidgetL().of([new heroes.Hero.new({tag: "logo", child: new container.Container.new({child: new image.Image.asset("images/logo.png", {$creationLocationd_0dea112b090073317d4: C[0] || CT.C0}), height: 60.0, $creationLocationd_0dea112b090073317d4: C[3] || CT.C3}), $creationLocationd_0dea112b090073317d4: C[7] || CT.C7}), new typewriter.TypewriterAnimatedTextKit.new({text: T.JSArrayOfStringL().of(["Flash Chat"]), speed: new core.Duration.new({milliseconds: 150}), textStyle: new text_style.TextStyle.new({fontSize: 45.0, fontWeight: ui.FontWeight.w900}), $creationLocationd_0dea112b090073317d4: C[11] || CT.C11})]), $creationLocationd_0dea112b090073317d4: C[16] || CT.C16}), new basic.SizedBox.new({height: 48.0, $creationLocationd_0dea112b090073317d4: C[19] || CT.C19}), new rounded_button.RoundedButton.new({colour: colors.Colors.lightBlueAccent, buttonTitle: "Login", onPressed: dart.fn(() => {
+                  navigator.Navigator.pushNamed(T.ObjectL(), context, "login_screen");
+                }, T.VoidToNull()), $creationLocationd_0dea112b090073317d4: C[22] || CT.C22}), new rounded_button.RoundedButton.new({colour: colors.Colors.blueAccent, buttonTitle: "Register", onPressed: dart.fn(() => {
+                  navigator.Navigator.pushNamed(T.ObjectL(), context, "registration_screen");
+                }, T.VoidToNull()), $creationLocationd_0dea112b090073317d4: C[27] || CT.C27})]), $creationLocationd_0dea112b090073317d4: C[32] || CT.C32}), $creationLocationd_0dea112b090073317d4: C[37] || CT.C37}), $creationLocationd_0dea112b090073317d4: C[41] || CT.C41});
+    }
+  };
+  (welcome_screen._WelcomeScreenState.new = function() {
+    this.animationController = null;
+    this.animation = null;
+    welcome_screen._WelcomeScreenState.__proto__.new.call(this);
+    ;
+  }).prototype = welcome_screen._WelcomeScreenState.prototype;
+  dart.addTypeTests(welcome_screen._WelcomeScreenState);
+  dart.addTypeCaches(welcome_screen._WelcomeScreenState);
+  dart.setMethodSignature(welcome_screen._WelcomeScreenState, () => ({
+    __proto__: dart.getMethods(welcome_screen._WelcomeScreenState.__proto__),
+    build: dart.fnType(dart.legacy(framework.Widget), [dart.legacy(framework.BuildContext)])
+  }));
+  dart.setLibraryUri(welcome_screen._WelcomeScreenState, I[0]);
+  dart.setFieldSignature(welcome_screen._WelcomeScreenState, () => ({
+    __proto__: dart.getFields(welcome_screen._WelcomeScreenState.__proto__),
+    animationController: dart.fieldType(dart.legacy(animation_controller.AnimationController)),
+    animation: dart.fieldType(dart.legacy(animation.Animation))
+  }));
+  dart.trackLibraries("packages/flash_chat/screens/welcome_screen.dart", {
+    "package:flash_chat/screens/welcome_screen.dart": welcome_screen
+  }, {
+  }, '{"version":3,"sourceRoot":"","sources":["welcome_screen.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAWuC;IAAqB;;;;;;EAC5D;;;;;;;;;MAJsB,+BAAE;;;;;;;;;;;;;;;;;AAaH,MAAX;AAKL,MAHD,2BAAsB,4DACV,gCAAkB,YACrB;AAGqF,MAA9F,iBAAY,AAAsD,iCAA7B,6BAAsB,8BAAe;AAE7C,MAA7B,AAAoB;AAIlB,MAFF,AAAoB,qCAAY;AAChB,QAAd,cAAS;;;IAGb;;AAIiB,MAAT;AACuB,MAA7B,AAAoB;IACtB;UAG0B;AACxB,YAAO,2DACY,AAAU,6BACrB,gCACgB,kDAAsB,eACnC,yCACgC,mDACE,2CACrB,yBAChB,6BACoB,yBAChB,0BACO,eACE,oCACQ,sBAAM,qFACX,wHAGZ,oDACQ,yBAAC,uBACA,qCAAuB,kBACnB,wCACC,kBACa,8IAK/B,gCACU,iEAEV,8CACiB,4CACF,oBACF;AACmC,kBAAlC,2CAAU,OAAO;+FAG/B,8CACmB,uCACF,uBACF;AAC0C,kBAAzC,2CAAU,OAAO;;IAO3C;;;IA9EoB;IACV;;;EA8EZ","file":"../../../../../../../packages/flash_chat/screens/welcome_screen.dart.lib.js"}');
+  // Exports:
+  return {
+    screens__welcome_screen: welcome_screen
+  };
+}));
+
+//# sourceMappingURL=welcome_screen.dart.lib.js.map

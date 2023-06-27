@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "C:\\Users\\chardor\\Desktop\\flutter\\flash-chat-flutter\\build\\firebase_core\\intermediates\\res\\merged\\release\\drawable\\notification_tile_bg.xml",
+        "source": "C:\\Users\\chardor\\.gradle\\caches\\transforms-2\\files-2.1\\74f3c8207576d1d35f2ee4b16c6b5449\\core-1.1.0\\res\\drawable\\notification_tile_bg.xml"
+    },
+    {
+        "merged": "C:\\Users\\chardor\\Desktop\\flutter\\flash-chat-flutter\\build\\firebase_core\\intermediates\\res\\merged\\release\\drawable\\notification_bg.xml",
+        "source": "C:\\Users\\chardor\\.gradle\\caches\\transforms-2\\files-2.1\\74f3c8207576d1d35f2ee4b16c6b5449\\core-1.1.0\\res\\drawable\\notification_bg.xml"
+    },
+    {
+        "merged": "C:\\Users\\chardor\\Desktop\\flutter\\flash-chat-flutter\\build\\firebase_core\\intermediates\\res\\merged\\release\\drawable\\notification_icon_background.xml",
+        "source": "C:\\Users\\chardor\\.gradle\\caches\\transforms-2\\files-2.1\\74f3c8207576d1d35f2ee4b16c6b5449\\core-1.1.0\\res\\drawable\\notification_icon_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\chardor\\Desktop\\flutter\\flash-chat-flutter\\build\\firebase_core\\intermediates\\res\\merged\\release\\drawable\\notification_bg_low.xml",
+        "source": "C:\\Users\\chardor\\.gradle\\caches\\transforms-2\\files-2.1\\74f3c8207576d1d35f2ee4b16c6b5449\\core-1.1.0\\res\\drawable\\notification_bg_low.xml"
+    }
+]

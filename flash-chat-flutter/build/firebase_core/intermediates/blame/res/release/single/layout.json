@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "C:\\Users\\chardor\\Desktop\\flutter\\flash-chat-flutter\\build\\firebase_core\\intermediates\\res\\merged\\release\\layout\\notification_template_part_time.xml",
+        "source": "C:\\Users\\chardor\\.gradle\\caches\\transforms-2\\files-2.1\\74f3c8207576d1d35f2ee4b16c6b5449\\core-1.1.0\\res\\layout\\notification_template_part_time.xml"
+    },
+    {
+        "merged": "C:\\Users\\chardor\\Desktop\\flutter\\flash-chat-flutter\\build\\firebase_core\\intermediates\\res\\merged\\release\\layout\\custom_dialog.xml",
+        "source": "C:\\Users\\chardor\\.gradle\\caches\\transforms-2\\files-2.1\\74f3c8207576d1d35f2ee4b16c6b5449\\core-1.1.0\\res\\layout\\custom_dialog.xml"
+    },
+    {
+        "merged": "C:\\Users\\chardor\\Desktop\\flutter\\flash-chat-flutter\\build\\firebase_core\\intermediates\\res\\merged\\release\\layout\\notification_template_part_chronometer.xml",
+        "source": "C:\\Users\\chardor\\.gradle\\caches\\transforms-2\\files-2.1\\74f3c8207576d1d35f2ee4b16c6b5449\\core-1.1.0\\res\\layout\\notification_template_part_chronometer.xml"
+    },
+    {
+        "merged": "C:\\Users\\chardor\\Desktop\\flutter\\flash-chat-flutter\\build\\firebase_core\\intermediates\\res\\merged\\release\\layout\\notification_action.xml",
+        "source": "C:\\Users\\chardor\\.gradle\\caches\\transforms-2\\files-2.1\\74f3c8207576d1d35f2ee4b16c6b5449\\core-1.1.0\\res\\layout\\notification_action.xml"
+    },
+    {
+        "merged": "C:\\Users\\chardor\\Desktop\\flutter\\flash-chat-flutter\\build\\firebase_core\\intermediates\\res\\merged\\release\\layout\\notification_template_icon_group.xml",
+        "source": "C:\\Users\\chardor\\.gradle\\caches\\transforms-2\\files-2.1\\74f3c8207576d1d35f2ee4b16c6b5449\\core-1.1.0\\res\\layout\\notification_template_icon_group.xml"
+    },
+    {
+        "merged": "C:\\Users\\chardor\\Desktop\\flutter\\flash-chat-flutter\\build\\firebase_core\\intermediates\\res\\merged\\release\\layout\\notification_action_tombstone.xml",
+        "source": "C:\\Users\\chardor\\.gradle\\caches\\transforms-2\\files-2.1\\74f3c8207576d1d35f2ee4b16c6b5449\\core-1.1.0\\res\\layout\\notification_action_tombstone.xml"
+    }
+]
